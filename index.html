@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PP3</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="account-form" method="get" action="succes.html" novalidate>
+        <fieldset>
+            <!-- Essentially the title of the fieldset -->
+            <h1>Create Account</h1>
+
+            <label for="fname">Name:
+
+
+
+                <!-- Error message to display if false -->
+
+
+            </label>
+
+
+            <!-- id is to retrieve info from js -->
+            <!-- name is the id to retrieve it from server side -->
+            <input type="text" id="fname" name="fname" placeholder="Enter Your Name">
+            <span id="err-fname" class="err">
+                Field Is Required
+            </span>
+
+
+            <!-- Email  -->
+
+            <label for="email">Email:
+
+                <!-- Error message to display if false -->
+
+
+            </label>
+
+
+
+            <!-- id is to retrieve info from js -->
+            <!-- name is the id to retrieve it from server side -->
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+
+            <span id="err-email" class="err">
+                Invalid Email format (include an @ and '.' )
+            </span>
+
+            <span id="err-noEmail" class="err">
+                Field is required
+            </span>
+
+            
+            <!-- PASSWORD -->
+            <label for="password">Password:
+
+                <!-- Error message to display if false -->
+
+
+            </label>
+
+            <!-- id is to retrieve info from js -->
+            <!-- name is the id to retrieve it from server side -->
+            <input type="password" id="password" name="password">
+            <span id="err-password" class="err">
+                Please make sure your password has at least 8 Characters
+            </span>
+            <!-- Confirm Password -->
+            <label for="cpassword">Confirm Password:
+
+                <!-- Error message to display if false -->
+
+
+            </label>
+
+            <!-- id is to retrieve info from js -->
+            <!-- name is the id to retrieve it from server side -->
+            <input type="text" id="cpassword" name="cpassword">
+            <span id="err-cpassword" class="err">
+                Field is required
+            </span>
+            <!-- CHECKBOX -->
+
+            <label><input type="checkbox" id="checkbox"> I agree to terms
+
+            </label>
+            <span id="err-checkbox" class="err">
+                Field is required
+            </span>
+
+
+
+            <button type="submit">Submit</button>
+        </fieldset>
+
+    </form>
+
+
+
+
+</body>
+
+</html>

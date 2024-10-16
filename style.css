@@ -1,0 +1,23 @@
+/* Changing all err elements to red */
+
+body{
+    color: white;
+}
+.err{
+    color: red;
+    display: none;
+}
+
+/* Visibility: hidden - takes space still */
+/* dispay: none -- Doesn't take space */
+
+label{
+    display: flex;
+}
+
+fieldset{
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: cadetblue;
+    border: .2rem solid black;
+}
